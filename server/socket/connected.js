@@ -1,0 +1,1 @@
+module.exports.connectedUsers = new Map()
