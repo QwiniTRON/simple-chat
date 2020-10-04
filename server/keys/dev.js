@@ -1,4 +1,5 @@
-module.exports = {
-  MONGO_URI: 'mongodb://localhost/chat_test',
-  SESSION_SECRET: 'CHAT_TEST_APP'
+if(process.env.NODE_ENV === 'production'){
+  module.exports = require('./propduction')
+} else {
+  module.exports = require('./development')
 }

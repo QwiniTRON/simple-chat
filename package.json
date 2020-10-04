@@ -1,0 +1,17 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "simple chat",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm run start --prefix client",
+    "server": "npm run dev --prefix server",
+    "build:client": "npm run build --prefix client",
+    "install:client": "npm run build --prefix client",
+    "install:server": "npm run build --prefix client",
+    "install:all": "concurrently \"npm run install:server\" \"npm run install:all\"",
+    "start": "concurrently  \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC"
+}
