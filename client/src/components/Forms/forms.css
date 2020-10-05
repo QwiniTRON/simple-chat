@@ -1,0 +1,30 @@
+.form-group input{
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  outline: 2px solid #333;
+  border-bottom: 2px solid #03a9f4;
+  font-size: 14px;
+}
+.form-group__error {
+  color: #e65100;
+}
+.btn {
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #81d4fa;
+  border: 1px solid #03a9f4;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.btn:disabled {
+  color: #777;
+}
+.btn--reset {
+  background-color: #fff59d;
+  border: 1px solid #f9a825;
+}
+.btn--reset i{
+  font-size: 14px;
+}

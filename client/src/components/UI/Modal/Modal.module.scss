@@ -1,0 +1,45 @@
+.modal {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 30px;
+  overflow: auto;
+  animation: modalEnter 0.3s;
+
+  .modal__overlay {
+    cursor: pointer;
+    background-color: hsla(0deg, 0%, 0%, 0.4);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .modal__body {
+    padding: 5px;
+    background-color: #fff;
+    position: relative;
+  }
+
+  .modal__closer {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    color: var(--error-color);
+    cursor: pointer;
+    font-size: 24px;
+  }
+}
+
+@keyframes modalEnter {
+  from {
+    transform: scale(0.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}

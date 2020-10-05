@@ -1,0 +1,24 @@
+.auth {
+
+}
+.auth__content {
+  width: 60vw;
+  margin: 0 auto;
+}
+.auth__back i{
+  vertical-align: middle;
+  font-size: 16px;
+  transition: margin-right 0.2s;
+}
+.auth__back:hover i {
+  margin-right: 5px;
+}
+.auth__back {
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+
+.error-notice {
+  color: orange;
+}

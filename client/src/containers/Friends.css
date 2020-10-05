@@ -1,0 +1,47 @@
+.friends-page {
+
+}
+
+.friends-page__container {
+  display: flex;
+  padding: 0 5px;
+  margin-top: 10px;
+}
+
+.invites {
+  flex-grow: 1;
+}
+
+.friends {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.friends-page .item {
+  display: flex;
+  margin-top: 5px;
+}
+
+.friends-page .item .item__buttons,
+.friends-page .item div,
+.friends-page .item > button{
+  margin-left: auto;
+}
+
+.item__btn {
+  border-radius: 5px;
+  border: 1px solid green;
+  background-color: greenyellow;
+  margin-left: 5px;
+}
+
+.item__btn--red {
+  border: 1px solid red;
+  background-color: rgb(231, 126, 126);
+}
+
+@media (max-width: 768px) {
+  .friends-page__container {
+    display: block;
+  }
+}
